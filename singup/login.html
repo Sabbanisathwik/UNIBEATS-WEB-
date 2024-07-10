@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    
+    <style>
+        
+        
+        body{
+            background-image: url(OIP.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .login-container {
+        align-items: center;  
+        align-self: center; 
+        width: 350px;
+        padding: 40px;
+        background-color:#77E4C8;
+        border: 1px solid #77E4C8;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(84, 105, 223, 0.1);
+        margin: 52px auto;
+        display: flexbox;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 10px;
+        color: rgb(14, 40, 235);
+    }
+    
+    input[type="text"], input[type="password"] {
+        width: 93%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        
+    }
+    
+    button[id="login-btn"] {
+        
+        width: 100%;
+        padding: 10px;
+        background-color: #e37616;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #error-message {
+        color: red;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .button:hover{
+        background-color: #e37616;
+        color:#77E4C8;
+    }
+    .Signup{
+        color: #ccc;
+        size: 10px;
+    }
+    </style>
+    <div class="login-container">
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <button id="login-btn">Login</button>
+        </form>
+        <div id="error-message"></div>
+        <div id="Signup"><a href="index.html">Signup</a></div>
+        
+    </div>
+
+    <script>
+        const form = document.getElementById("login-form");
+        const usernameInput = document.getElementById("username");
+        const passwordInput = document.getElementById("password");
+        const loginBtn = document.getElementById("login-btn");
+        const errorMessage = document.getElementById("error-message");
+        
+        loginBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            const username = usernameInput.value;
+            const password = passwordInput.value;
+            if (username && password) {
+                // Call login API or perform login logic here
+                console.log(`Logging in with username: ${username} and password: ${password}`);
+            } else {
+                errorMessage.innerText = "Please enter both username and password";
+            }
+        });
+        </script>
+</body>
+</html>
