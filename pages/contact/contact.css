@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://media.istockphoto.com/id/1137781483/photo/black-male-guitarist-singing-and-playing-acoustic-guitar-on-stage.jpg?s=1024x1024&w=is&k=20&c=dxFsPJ4AsfVceswQc7GEyVEKOZXXd1ZHhms495DZfsw='); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 1200px;
+    margin: 50px auto;
+    height: 600px;
+    border-radius: 15px;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    margin-right: 50px;
+    background-color: rgba(33, 33, 33, 0.8);
+    border-radius: 10px;
+    height: 400px;
+    text-align: center;
+    max-width: 500px;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f5f5f5; 
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #bdbdbd;
+}
+
+.contact-info a {
+    color: #bdbdbd;
+    text-decoration: none;
+}
+
+.contact-detail {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(66, 66, 66, 0.9);
+    border-radius: 5px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(33, 33, 33, 0.8);
+    border-radius: 10px;
+    height: 400px;
+    max-width: 500px;
+    padding-left: 90px;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #757575;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    background-color: #424242; 
+    color: #f5f5f5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    margin-bottom: 10px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgba(66, 66, 66); 
+    color: #bdbdbd; 
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 85%;
+   /* margin-left: 30%;
+    margin-right: 30%; */
+}
+
+button:hover {
+    background-color: #4f4747; 
+}
